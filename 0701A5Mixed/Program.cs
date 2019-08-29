@@ -6,7 +6,7 @@ namespace _0701A5Mixed
     {
         static float miles(int a)
         {
-            return (float)a * 1.609344F;
+            return (float)a / 1.609344F;
         }
 
         static long fak(long a)
@@ -87,7 +87,7 @@ namespace _0701A5Mixed
                     case 'M':
                         Console.Write("Bitte eine Zahl eingeben:");
                         a = int.Parse(Console.ReadLine());
-                        Console.WriteLine("{0} km entsprechen {1} Meilen", a, miles(a));
+                        Console.WriteLine("{0} km entsprechen {1:F4} Meilen", a, miles(a));
                         break;
 
                     default:
